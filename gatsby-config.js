@@ -9,35 +9,48 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Portfolio 2023`,
+    description: `Portfolio feito usando GatsbyJS com o objetivo de Mostrar minhas habilidades, projetos e conquistas de forma envolvente e profissional. Proporcionando uma experiência única aos visitantes.`,
+    author: `Daniel`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `./src/images`,
       },
+      __key: `images`
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-svgr',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        prettier: true,          // use prettier to format JS code output (default)
+        svgo: false,              // use svgo to optimize SVGs (default)
+        svgoConfig: {
+          plugins: [
+            { removeViewBox: false }, // remove viewBox when possible (default)
+            { cleanupIDs: false },    // remove unused IDs and minify remaining IDs (default)
+          ],
+        },
       },
     },
   ],
-}
+};
+exports.onCreateWebpackConfig = ({ actions, loaders }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.svg$/,
+          use: ['@svgr/webpack'],
+        },
+      ],
+    },
+  });
+};
