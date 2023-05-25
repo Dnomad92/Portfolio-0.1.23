@@ -10,21 +10,8 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import { StaticImage } from 'gatsby-plugin-image';
 
-
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -36,7 +23,7 @@ export default function Hero() {
 
   return (
     <div>
-      <header className="bg-white">
+      <header className="bg-neutral-50">
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -128,7 +115,7 @@ export default function Hero() {
         </Dialog>
       </header>
 
-      <div className="grid grid-cols-2 min-h-full place-items-left bg-white px-6 py-24 sm:py-32 lg:px-20 lg:py-9">
+      <div className="grid grid-cols-1 md:grid-cols-2 min-h-full place-items-left bg-neutral-50 px-6 py-24 sm:py-32 lg:px-20 lg:py-9">
         <div className="text-left max-w-lg mr-4 lg:py-16">
           <p className="text-base font-semibold text-indigo-600">Portfolio</p>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Olá! 👋 <br/> Eu sou Daniel</h1>
@@ -136,7 +123,7 @@ export default function Hero() {
           <div className="mt-10 flex items-center justify-left gap-x-6">
             <a
               href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               WhatsApp
             </a>
