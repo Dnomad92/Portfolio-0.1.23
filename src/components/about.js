@@ -5,15 +5,15 @@ export default function About () {
 	return(
 		<div className="relative items-center pb-0 bg-neutral-50">
 			<div className="items-strech static  pt-10 lg:gap-y-8">
-				<div className=" absolute flex rounded-2xl  max-h-56 -my-20 md:p-0 z-10 inset-x-8 max-w-96 lg:max-w-fit lg:-my-8  bg-slate-500  ">
+				<div className=" absolute flex rounded-2xl  max-h-56 -my-20 md:p-0 z-10 inset-x-8 max-w-96 max-w-fit lg:-my-8  bg-slate-500  ">
 					<div className="relative shadow-2xl shadow-zinc-800 flex rounded-2xl lg:h-full aspect-2/1 lg:aspect-auto mx-0">
 					  <StaticImage 
-					  	className="object-cover h-30 bject-top lg:h-full w-auto rounded-2xl"
+					  	className=" h-30  lg:h-full w-auto rounded-2xl"
 					  	loading="lazy" 
 					  	src="../images/fotoAbout.jpeg" 
 					  	alt=""			
 					  	height = {560}
-					  	width = {400}		  	
+					  	// width = {400}		  	
 					 	/>
 					</div>
 				</div>
@@ -24,7 +24,7 @@ export default function About () {
 							Eu sou Daniel, um desenvolvedor web apaixonado. Crio experiências incríveis e deslumbrantes na web usando o GatsbyJS. Com minha experiência e conhecimento, ofereço um serviço completo de configuração para que você possa começar seu projeto com tranquilidade e agilidade.
 						</p>
 						<p >
-							Com o Gatsby, utilizo a poderosa combinação de React, GraphQL e otimização de desempenho para entregar sites extremamente rápidos, independentemente do tamanho ou complexidade. Seja uma landing page elegante, um site institucional de destaque ou uma loja online sofisticada, estou preparado para tornar sua visão uma realidade.
+							Com o Gatsby, utilizo a combinação de React, GraphQL e otimização de desempenho para entregar sites extremamente rápidos, independentemente do tamanho ou complexidade. Seja uma landing page elegante, um site institucional de destaque ou uma loja online sofisticada, estou preparado para tornar sua visão uma realidade.
 						</p>
 						<p >
 							Além disso, meu compromisso com a qualidade e a atenção aos detalhes garantem que cada projeto seja cuidadosamente desenvolvido, com uma arquitetura escalável e um código limpo e organizado.
@@ -36,7 +36,7 @@ export default function About () {
 			      </p>
 			    </blockquote>
 			    <figcaption class="font-medium text-right">
-			      <div class="text-sky-500 dark:text-sky-400">
+			      <div class="text-sky-500 mt-4 dark:text-sky-400">
 			        Daniel Oliveira
 			      </div>
 			      <div class="text-slate-700 dark:text-slate-500">

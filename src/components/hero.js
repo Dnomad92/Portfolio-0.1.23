@@ -125,7 +125,7 @@ export default function Hero() {
         <div className="text-left max-w-lg mr-4 lg:py-16">
           <p className="text-base font-semibold text-indigo-600">Portfolio</p>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Olá! 👋 <br/> Eu sou Daniel</h1>
-          <p className="mt-6 text-base leading-7 text-gray-600">Imagine ter um site impressionante, responsivo e de alto desempenho, tudo isso sem se preocupar com as complexidades técnicas. É exatamente isso que eu faço por você.</p>
+          <p className="mt-6 text-base leading-9 text-gray-600">Imagine ter um site impressionante, responsivo e de alto desempenho, tudo isso sem se preocupar com as complexidades técnicas. É exatamente isso que eu faço por você.</p>
           <div className="mt-10 flex items-center justify-left gap-x-6">
             <a
               href="#"
