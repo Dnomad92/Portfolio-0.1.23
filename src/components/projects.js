@@ -10,7 +10,7 @@ const projects = [
     description: 'Site de uma única página que concentra todas as informações importantes sobre a sua empresa, como missão, serviços, equipe e informações de contato.',
     image: singlePage,
     link: 'https://tocalandingpage.gatsbyjs.io/',
-    tags: ['Front-End', 'UI/UX', 'Concept design', 'Fast Deploy', 'Gatsby Cloud'],
+    tags: ['Front-End', 'UI/UX', 'Concept design', 'SEO', 'Gatsby Cloud'],
     bgColor:'bg-yellow-300'
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     description: 'Crie um site personalizado para exibir seus trabalhos, projetos e habilidades, permitindo que potenciais clientes ou empregadores conheçam seu trabalho.',
     image: portfolioPage,
     link: 'https://portfolio0123.gatsbyjs.io/',
-    tags: ['Front-End', 'Data Visualization', 'Data Analysis', 'Real-time Updates'],
+    tags: ['Front-End', 'UI/UX', 'SEO', 'Real-time Updates'],
     bgColor:'bg-blue-200'
   },
   
@@ -30,7 +30,7 @@ const projects = [
     description: 'Desenvolva um site que apresente informações detalhadas sobre a sua empresa, sua missão, serviços oferecidos e dados de contato.',
     image: singlePage,
     link: 'https://dnomad92.github.io/Agency-Model-1',
-    tags: ['Front-End', 'Back-End', 'UI/UX', 'Payment Integration', 'Database Management'],
+    tags: ['Front-End', 'Back-End', 'UI/UX', 'Concept Design', 'Mobile'],
     bgColor:'bg-red-200'
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     description: 'Um site de uma única página que mostra detalhes, com o objetivo de promover um produto, capturar leads ou direcionar os visitantes para uma oferta específica.',
     image: portfolioPage,
     link: 'https://tocalandingpagev2.gatsbyjs.io/',
-    tags: ['Mobile Development', 'UI/UX', 'Push Notifications', 'Offline Capabilities'],
+    tags: ['Mobile Development', 'UI/UX', 'CMS Integration', 'SEO'],
     bgColor:'bg-green-200'
   },
 ];
