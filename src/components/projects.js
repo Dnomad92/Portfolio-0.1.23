@@ -1,7 +1,9 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image'; 
-import singlePage from '../images/projects/singlePage.png'
-import portfolioPage from '../images/projects/portfolioPage.png'
+// import { StaticImage } from 'gatsby-plugin-image'; 
+import singlePage from '../images/projects/singlePage.png';
+import portfolioPage from '../images/projects/portfolioPage.png';
+import instPage from '../images/projects/instPage.png';
+import landingPage from '../images/projects/landingPage.png'
 
 const projects = [
   {
@@ -28,7 +30,7 @@ const projects = [
     name: 'Site Institucional',
     title: 'A presença online da sua empresa com um site institucional profissional',
     description: 'Desenvolva um site que apresente informações detalhadas sobre a sua empresa, sua missão, serviços oferecidos e dados de contato.',
-    image: singlePage,
+    image: instPage,
     link: 'https://dnomad92.github.io/Agency-Model-1',
     tags: ['Front-End', 'Back-End', 'UI/UX', 'Payment Integration', 'Database Management'],
     bgColor:'bg-red-200'
@@ -37,7 +39,7 @@ const projects = [
     name: 'Landing Page',
     title: 'Venda mais captando a atenção dos visitantes com uma página de destino',
     description: 'Um site de uma única página que mostra detalhes, com o objetivo de promover um produto, capturar leads ou direcionar os visitantes para uma oferta específica.',
-    image: portfolioPage,
+    image: landingPage,
     link: 'https://tocalandingpagev2.gatsbyjs.io/',
     tags: ['Mobile Development', 'UI/UX', 'Push Notifications', 'Offline Capabilities'],
     bgColor:'bg-green-200'
@@ -46,7 +48,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-neutral-50 overflow-visible">
+    <div id="projects" className="bg-neutral-50 overflow-visible">
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:py-12 lg:px-0">
         <div>
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Meus Projetos</h2>

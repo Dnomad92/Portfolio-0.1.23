@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export default function About () {
 	return(
-		<div className="relative items-center pb-0 bg-neutral-50">
+		<div id="about" className="relative items-center pb-0 bg-neutral-50">
 			<div className="items-strech static  pt-10 lg:gap-y-8">
 				<div className=" absolute flex rounded-2xl  max-h-56 -my-20 md:p-0 z-10 inset-x-8 max-w-96 max-w-fit lg:-my-8  bg-slate-500  ">
 					<div className="relative shadow-2xl shadow-zinc-800 flex rounded-2xl lg:h-full aspect-2/1 lg:aspect-auto mx-0">

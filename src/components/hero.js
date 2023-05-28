@@ -47,19 +47,19 @@ export default function Hero() {
           </div>
 
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <a href="#skills" className="text-sm font-semibold leading-6 text-white">
               Skills
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <a href="#about" className="text-sm font-semibold leading-6 text-white">
               About
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <a href="#projects" className="text-sm font-semibold leading-6 text-white">
               Projects
             </a>
           </Popover.Group>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <a href="#contact" className="text-sm font-semibold leading-6 text-white">
               Contato <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -141,8 +141,8 @@ export default function Hero() {
             src="../images/hero.jpg"
             alt="developer"
             layout="fixed"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
           />
         </div>
 

@@ -13,7 +13,7 @@ import { ReactComponent as PostGreSQLLogo } from '../images/svg/postgresql.svg';
 
 export default function Skills() {
   return (
-    <div className="bg-neutral-50 py-24 sm:py-32">
+    <div id="skills" className="bg-neutral-50 py-24 sm:py-32">
       <div className="mx-auto px-6 lg:px-8">
         <h2 className="text-center text-4xl font-bold tracking-tight sm:text-6xl leading-8 text-slate-800">
           Técnicas em Destaque
